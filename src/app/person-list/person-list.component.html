@@ -1,0 +1,102 @@
+<!--<div class="card" *ngFor="let person of people">
+  <div class="card-header">
+    <h3 class="card-title" ><button class="btn bg-transparent" type="button" [routerLink]="['/update/', person.id]">{{ person.name | uppercase}}</button></h3>
+  </div>
+  <div class="card-body">
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="imageClass" [src]="person.avatar"/>
+        </div>
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-6">
+              Name
+            </div>
+            <div class="col-sm-6">
+              : {{ person.name | uppercase }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              Age
+            </div>
+            <div class="col-sm-6">
+              : {{ person.dob | age }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              Email
+            </div>
+            <div class="col-sm-6">
+              : {{ person.email }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              Country
+            </div>
+            <div class="col-sm-6">
+              : {{ person.country }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <button type="url" Class="btn btn-danger" (click)="deletePerson(person.id)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-1" *ngFor="let person of people"> 
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title" ><button class="btn bg-transparent" type="button" [routerLink]="['/update/', person.id]">{{ person.name | uppercase}}</button></h3>
+        <p>Click me to update</p>
+      </div>
+      <img class="imageClass" [src]="person.avatar"/>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-6">
+            Name
+          </div>
+          <div class="col-sm-6">
+            : {{ person.name | uppercase }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            Age
+          </div>
+          <div class="col-sm-6">
+            : {{ person.dob | age }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            Email
+          </div>
+          <div class="col-sm-6">
+            : {{ person.email }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            Country
+          </div>
+          <div class="col-sm-6">
+            : {{ person.country }}
+          </div>
+        </div>
+        <div class="card-footer">
+            <i class="fa fa-trash" aria-hidden="true">
+              <button type="url" Class="btn btn-danger" (click)="deletePerson(person.id)">Delete</button>
+            </i>   
+        </div>
+      </div>
+    </div>
+</div>

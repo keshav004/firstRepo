@@ -1,0 +1,18 @@
+/*unvisited link*/
+a:link{
+    color: #FF0000;
+}
+
+/* mouse over link */
+a:hover {
+    color:black;
+}
+  
+div:hover p {
+    display: block;
+  }
+
+.navbar{
+    margin-left:10px;
+    border-radius: 5px;
+}

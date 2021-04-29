@@ -1,0 +1,24 @@
+<div class="container">
+    <nav class="navbar navbar-expand navbar-dark bg-dark border-success">
+      <a href="#" class="navbar-brand">Person App</a>
+      <div class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a routerLink="list" class="nav-link">People</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="create" class="nav-link">Create</a>
+        </li>
+      </div>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="list">Home</a></li>
+        <li class="breadcrumb-item"><a routerLink="create">Create</a></li>
+      </ol>
+    </nav>
+    <div class="container mt-5">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

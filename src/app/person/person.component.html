@@ -1,0 +1,27 @@
+<form class="row g-3" #myform="ngForm" >
+  <div class="col-md-6">
+    <label for="myname" class="form-label">Name</label>
+    <input type="text" class="form-control" id="myname" name="name" [(ngModel)]="person.name">
+  </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="person.email">
+    </div>
+    <div class="col-12">
+      <label for="dob" class="form-label">Date Of Birth</label>
+      <input type="date" class="form-control" id="dob" name="dob" [(ngModel)]="person.dob">
+    </div>
+    <div class="col-12">
+      <label for="avatar" class="form-label">Avatar</label>
+      <input type="text" class="form-control" id="avatar" name="avatar" [(ngModel)]="person.avatar">
+    </div>
+    <div class="col-12">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" class="form-control" id="country" name="country" [(ngModel)]="person.country">
+      </div>
+    <div class="col-12">
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      <button type="submit" class="btn btn-primary" (click)="updatePerson(myform.value)">Update</button>
+    </div>
+  </form>
+  
